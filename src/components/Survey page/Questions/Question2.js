@@ -12,15 +12,15 @@ const Question2 = (props) => {
 
   const handlePrev = (e) => {
     e.preventDefault();
-    this.props.prevStep();
+    props.prevStep();
   };
 
   return (
-    <div>
+    <div className="TextArea">
       <TextField
         select
         label={props.quiz2}
-        style={{ marginBottom: 25, width: "35rem" }}
+        style={{ marginBottom: 25, width: "70vw" }}
         variant="outlined"
         onChange={(e) => props.setQuestion2(e.target.value)}
         value={props.question2}

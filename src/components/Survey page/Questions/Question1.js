@@ -11,9 +11,9 @@ const Question1 = (props) => {
   };
 
   return (
-    <div>
+    <div className="TextArea">
       <TextField
-        style={{ marginBottom: 25, width: "35rem" }}
+        style={{ marginBottom: 25, width: "70vw" }}
         label={props.quiz1}
         variant="outlined"
         onChange={(e) => props.setQuestion1(e.target.value)}
