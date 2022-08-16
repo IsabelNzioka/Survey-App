@@ -26,7 +26,7 @@ const Response = () => {
   //     values: { question1, question2, question3, id },
   //   } = values;
 
-  console.log("valus>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", values.id);
+  console.log("valus>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", values);
 
   function createData(surveyId, questionOne, questionTwo, questionThree) {
     return { surveyId, questionOne, questionTwo, questionThree };

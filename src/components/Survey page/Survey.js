@@ -19,7 +19,7 @@ const Survey = () => {
   const [question2, setQuestion2] = useState(null);
   const [question3, setQuestion3] = useState(null);
   const [options, setOptions] = useState(null);
-  //   const [error, setError] = useState(false);
+  const [error, setError] = useState(false);
   const [step, setStep] = useState(1);
   const [id, setId] = useState(0);
 
@@ -31,6 +31,9 @@ const Survey = () => {
   };
   const nextStep = () => {
     setStep(step + 1);
+    if (!question1 || !question2 || !question3) {
+      setError(true);
+    }
   };
   const prevStep = () => {
     setStep(step - 1);
@@ -84,6 +87,7 @@ const Survey = () => {
                   quiz1={quiz1}
                   nextStep={nextStep1}
                   setQuestion1={setQuestion1}
+                  error={error}
                 />
               );
             case 2:
@@ -102,7 +106,9 @@ const Survey = () => {
                 <Question3
                   quiz3={quiz3}
                   nextStep={nextStep}
+                  prevStep={prevStep}
                   setQuestion3={setQuestion3}
+                  values={values}
                 />
               );
 

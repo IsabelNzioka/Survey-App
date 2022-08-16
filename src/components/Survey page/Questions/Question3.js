@@ -11,7 +11,7 @@ const Question3 = (props) => {
 
   const handlePrev = (e) => {
     e.preventDefault();
-    this.props.prevStep();
+    props.prevStep();
   };
 
   return (
