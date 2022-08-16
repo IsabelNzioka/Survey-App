@@ -1,0 +1,22 @@
+.Survey {
+  background-color: #9ed2c6;
+  height: 100%;
+  padding: 4rem;
+}
+
+.Response {
+  background-color: #54bab9;
+  height: 100%;
+  padding: 3rem;
+}
+
+.Heading-secondary {
+  margin-bottom: 6rem;
+  font-size: 3rem;
+}
+
+.settings_select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
